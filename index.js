@@ -34,6 +34,7 @@ setInterval(() => {
       console.log(time.toString() + ' : mongodb was down restarted the process');
     }
     else {
+      console.log(time.toString() + ' : MONGO IS DOWN, CAN NOT RESTART');
       sendAlert('MONGO DOWN: CAN NOT RESTART!!!', 'MONGO IS DOWN, CAN NOT RESTART');
     }
   } else {
